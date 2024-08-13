@@ -148,6 +148,7 @@
             }
         }
     </style>
+    <script src="https://cdn.staticfile.org/sweetalert/2.1.2/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="announcement-container">
@@ -180,8 +181,8 @@
             <p>可以发涩图，略微摄政。</p>
             <p>加入方法：做以下两个调查，做完后发给队长审核</p>
             <div class="button-container">
-                <a href="https://songyon.github.io/8valuescn/" target="_blank" class="button">8valuescn</a>
-                <a href="https://air.moe/funs/XPcheck/index.html" target="_blank" class="button">XPcheck</a>
+                <a href="https://songyon.github.io/8valuescn/" class="button external-link">8valuescn</a>
+                <a href="https://air.moe/funs/XPcheck/index.html" class="button external-link">XPcheck</a>
             </div>
             <p>复制浏览器打开，打不开就挂梯。<br>发女装免答题。</p>
             <p>2. 鸣潮群：打鸣潮即可。</p>
@@ -192,7 +193,7 @@
             </div>
             <p>5. 抖音群：关注队长抖音互关拉群。</p>
             <div class="button-container">
-                <a href="https://www.douyin.com/user/MS4wLjABAAAAttY0PF1RerO_XG0PzotiKSjWN9Bv0dKQdZMSFmAQVsM" target="_blank" class="button">队长抖音</a>
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAttY0PF1RerO_XG0PzotiKSjWN9Bv0dKQdZMSFmAQVsM" class="button external-link">队长抖音</a>
             </div>
 
             <h2>【招人问题】</h2>
@@ -210,10 +211,9 @@
             <div class="button-container">
                 <a href="./classic.html" target="_blank" class="button">经典永流传</a>
                 <a href="./unimportance.html" target="_blank" class="button">不重要~</a>
-                <a href="https://huakaifuguidoge.github.io/codm_ACGclub/" target="_blank" class="button">战队官网</a>
-                <a href="https://huakaifuguidoge.github.io/CODM-GO/" target="_blank" class="button">CODM？启动！</a>
-                <a href="https://huakaifuguidoge.github.io/CODM-hypnosis/" target="_blank" class="button">催眠~</a>
-
+                <a href="https://huakaifuguidoge.github.io/codm_ACGclub/" target="_blank" class="button external-link">战队官网</a>
+                <a href="https://huakaifuguidoge.github.io/CODM-GO/" target="_blank" class="button external-link">CODM？启动！</a>
+                <a href="https://huakaifuguidoge.github.io/CODM-hypnosis/" target="_blank" class="button external-link">催眠</a>
             </div>
         </main>
         <footer class="announcement-footer">
@@ -221,5 +221,36 @@
             <p>发布日期: 2024年8月14日</p>
         </footer>
     </div>
+
+    <script>
+        document.querySelectorAll('.external-link').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var url = this.href;
+                swal({
+                    title: "打开被拦截？",
+                    text: "如果你打开后被拦截，请复制以下链接并粘贴到浏览器中打开：" + url,
+                    icon: "warning",
+                    buttons: {
+                        cancel: "尝试访问",
+                        confirm: {
+                            text: "复制链接",
+                            value: "copy"
+                        }
+                    },
+                }).then((value) => {
+                    if (value === "copy") {
+                        navigator.clipboard.writeText(url).then(() => {
+                            swal("复制成功", "链接已复制到剪贴板", "success");
+                        }).catch(err => {
+                            swal("复制失败", "请手动复制链接", "error");
+                        });
+                    } else {
+                        window.open(url, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
