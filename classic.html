@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典永流传</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .classic-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .classic-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .classic-header h1 {
+            font-size: 2.5em;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 48%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .image-gallery img.tall {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .classic-container {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            .classic-header h1 {
+                font-size: 2em;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="classic-container">
+        <header class="classic-header">
+            <h1>经典永流传</h1>
+        </header>
+        <main class="classic-content">
+            <div class="image-gallery">
+                <img src="./img/classic/1.jpg" class="">
+                <img src="./img/classic/2.jpg" class="">
+                <img src="./img/classic/3.jpg" class="tall">
+                <img src="./img/classic/4.jpg" class="tall">
+                <img src="./img/classic/5.jpg" class="tall">
+                <img src="./img/classic/6.jpg" class="tall">
+                <img src="./img/classic/7.jpg" class="">
+                <img src="./img/classic/8.jpg" class="">
+                <img src="./img/classic/9.jpg" class="">
+                <img src="./img/classic/10.jpg" class="">
+                <img src="./img/classic/11.jpg" class="">
+                <img src="./img/classic/12.jpg" class="">
+                <img src="./img/classic/13.jpg" class="tall">
+                <img src="./img/classic/14.jpg" class="">
+                <img src="./img/classic/15.jpg" class="">
+            </div>
+        </main>
+    </div>
+</body>
+</html>

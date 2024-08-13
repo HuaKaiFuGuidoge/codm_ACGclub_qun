@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>群公告</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .announcement-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .announcement-header h1 {
+            font-size: 2.5em;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .announcement-header p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .announcement-content {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .announcement-content h2 {
+            color: #555;
+            margin-top: 25px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .announcement-content p {
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .button {
+            flex: 1 1 auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #888;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+        }
+
+        /* 设备特定样式 */
+        @media screen and (max-width: 767px) {
+            .button {
+                background-color: #4CAF50;
+            }
+
+            .announcement-container {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            .announcement-header h1 {
+                font-size: 2em;
+            }
+
+            .announcement-content {
+                font-size: 1em;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .announcement-container {
+                max-width: 700px;
+            }
+
+            .announcement-header h1 {
+                font-size: 2.2em;
+            }
+
+            .announcement-content {
+                font-size: 1.05em;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .announcement-container {
+                max-width: 900px;
+            }
+
+            .announcement-header h1 {
+                font-size: 2.5em;
+            }
+
+            .announcement-content {
+                font-size: 1.15em;
+            }
+
+            .image-gallery img {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement-container">
+        <header class="announcement-header">
+            <h1>群公告</h1>
+        </header>
+        <main class="announcement-content">
+            <p>队长支持你们发自己的女装照，但请不要发自己女朋友或身边人的照片，在没有经过别人允许下就发是不礼貌的行为。</p>
+            <p>旭姜为了上群公告把裸照发给我了，故此增加一条。</p>
+            <p>队长QQ：2704916917</p>
+
+            <h2>【新人观看】</h2>
+            <p>刚入群/队的72小时内不发言踢，随便聊聊天就行，没话聊发游戏战绩也行。</p>
+            <p>不定期清理不活跃（综合群内发言频率，游戏上号时间，活动参加频率）。</p>
+            <p>富贵=队长。</p>
+
+            <h2>【群规】</h2>
+            <p><del> 0.在与格雷玩家、mg42玩家和bp50玩家交流时需要带敬语。</del></p>
+            <p>1. 群里只占位不聊天的踢群。</p>
+            <p>2. 魔怔的别恶心自己人，别给战队招黑。</p>
+            <p>3. 有事情当场解决，解决不了也别玩岁月史书。</p>
+            <p>4. 出问题好好聊，急眼的直接踢。</p>
+            <p>5. 禁止重度色情，恐怖，暴力内容等。</p>
+            <p>6. 开玩笑适度，不熟的人别乱开玩笑。</p>
+            <p>7. 禁聊内政。</p>
+            <p>8. 惹是生非到处乱咬人的直接飞机票一张。</p>
+
+            <h2>【子群聊】</h2>
+            <p>1. 战队小群</p>
+            <p>可以发涩图，略微摄政。</p>
+            <p>加入方法：做以下两个调查，做完后发给队长审核</p>
+            <div class="button-container">
+                <a href="https://songyon.github.io/8valuescn/" target="_blank" class="button">8valuescn</a>
+                <a href="https://air.moe/funs/XPcheck/index.html" target="_blank" class="button">XPcheck</a>
+            </div>
+            <p>复制浏览器打开，打不开就挂梯。<br>发女装免答题。</p>
+            <p>2. 鸣潮群：打鸣潮即可。</p>
+            <p>3. 真心话大冒险群：如果有人正在玩可直接选择加入，如果没有则需要你自己攒局，攒够三人即可开局。</p>
+            <p>4. Q群：申请入群填写你名字。</p>
+            <div class="image-gallery">
+                <img src="./img/QQ.jpg" alt="QQ群">
+            </div>
+            <p>5. 抖音群：关注队长抖音互关拉群。</p>
+            <div class="button-container">
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAttY0PF1RerO_XG0PzotiKSjWN9Bv0dKQdZMSFmAQVsM" target="_blank" class="button">队长抖音</a>
+            </div>
+
+            <h2>【招人问题】</h2>
+            <p>1. 熟人介绍，简单与考核打完看完实力即可。</p>
+            <p>2. 大厅/游戏外招人，先考虑素质成分，其次是实力，没素质的手子一样不要。</p>
+
+            <h2>【封神榜】</h2>
+            <p>传奇耐电王-凌波。</p>
+
+            <h2>【单挑】</h2>
+            <p>要单挑的私聊去单，吵架别在群里吵。有问题就导出录像。</p>
+            <p>单挑前聊好规则，否则只禁止连续得分，技能和投掷物。<br>默认不禁止mg42,bp50,卡复活,架点,静步,精准定位,除非提前聊好。</p>
+
+            <h2>其他</h2>
+            <div class="button-container">
+                <a href="./classic.html" target="_blank" class="button">经典永流传</a>
+                <a href="./unimportance.html" target="_blank" class="button">不重要~</a>
+                <a href="https://huakaifuguidoge.github.io/codm_ACGclub/" target="_blank" class="button">战队官网</a>
+                <a href="https://huakaifuguidoge.github.io/CODM-GO/" target="_blank" class="button">CODM？启动！</a>
+                <a href="https://huakaifuguidoge.github.io/CODM-hypnosis/" target="_blank" class="button">催眠~</a>
+
+            </div>
+        </main>
+        <footer class="announcement-footer">
+            <p>发布人: 队长</p>
+            <p>发布日期: 2024年8月14日</p>
+        </footer>
+    </div>
+</body>
+</html>
